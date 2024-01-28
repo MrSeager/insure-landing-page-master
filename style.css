@@ -1,0 +1,219 @@
+body{
+	font-family: 'Karla', sans-serif;
+	margin: 0;
+	cursor: default;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 80%;
+	margin: 2% 10% 2% 10%;
+	align-items: center;
+}
+
+nav{
+	width: 45%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: grey;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-size: 100%;
+}
+
+header img{
+	object-fit: cover;
+	width: 15%;
+}
+
+nav a:hover{
+	color: black;
+	cursor: pointer;
+}
+
+nav button{
+	height: 50px;
+	width: 150px;
+	font-family: 'Karla', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	border: solid black;
+	background-color: transparent;
+	letter-spacing: 2px;
+	cursor: pointer;
+	font-size: 100%;
+	z-index: 1;
+}
+
+nav button:hover{
+	background-color: black;
+	color: white;
+}
+
+
+.first{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 5% 5%;
+	padding: 10% 10%;
+	align-items: start;
+	background: linear-gradient(180deg, rgba(45,38,64,1) 0%, rgba(45,38,64,1) 70%, rgba(255,61,84,0) 70%, rgba(255,61,84,0) 100%);
+	width: 80%;
+	position: relative;
+}
+
+.first::before{
+	content: url(images/bg-pattern-intro-right-desktop.svg);
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	height: 50%;
+}
+
+.first::after{
+	content: url(images/bg-pattern-intro-left-desktop.svg);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 50%;
+	pointer-events: none;
+}
+
+.first img{
+	grid-row: span 4;
+	order: 2;
+	width: 100%;
+}
+
+.first h1{
+	order: 1;
+	color: white;
+	font-family: 'DM Serif Display', sans-serif;
+	font-size: 80px;
+	font-weight: 400;
+	line-height: 80px;
+	padding-top: 75px;
+	margin: 0;
+	position: relative;
+}
+
+.first h1:after {
+  content: "";
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 25%;
+}
+
+.first p{
+	order: 3;
+	color: white;
+	line-height: 25px;
+	letter-spacing: 1px;
+	margin: 0;
+}
+
+.first button{
+	order: 4;
+	width: 150px;
+	height: 50px;
+	font-family: 'Karla', sans-serif;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 100%;
+	font-weight: 700;
+	border: solid white;
+	background-color: transparent;
+	letter-spacing: 2px;
+	color: white;
+}
+
+.first button:hover{
+	color: hsl(256, 26%, 20%);
+	background-color: white;
+}
+
+.second{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 0 10%;
+	gap: 15% 2%;
+}
+
+.second h2{
+	grid-column: span 3;
+	font-family: 'DM Serif Display', sans-serif;
+	font-size: 75px;
+	padding-top: 75px;
+	font-weight: 400;
+	position: relative;
+	margin: 0;
+}
+
+.second h2:after {
+  content: "";
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 15%;
+}
+
+.second h4{
+	font-family: 'DM Serif Display', sans-serif;
+	font-weight: 400;
+}
+
+.second p{
+	color: grey;
+	line-height: 25px;
+}
+
+.third{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin: 10%;
+	width: 80%;
+	background: url("images/bg-pattern-how-we-work-desktop.svg") no-repeat center right
+				hsl(256, 26%, 20%);
+}
+
+.third h3{
+	font-family: 'DM Serif Display', sans-serif;
+	color: white;
+	font-weight: 400;
+	font-size: 50px;
+	width: 50%;
+	line-height: 55px;
+}
+
+.third button{
+	width: 200px;
+	height: 50px;
+	font-family: 'Karla', sans-serif;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 100%;
+	font-weight: 700;
+	border: solid white;
+	background-color: transparent;
+	letter-spacing: 2px;
+	color: white;
+	font-size: 90%;
+}
+
+.third button:hover{
+	color: hsl(256, 26%, 20%);
+	background-color: white;
+}
