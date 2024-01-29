@@ -21,11 +21,27 @@
 <body>
 	<header>
 		<img src="images/logo.svg" alt="logo">
-		<nav>
+		
+		<button class="mobbtnop" onclick="openNavMenu()"><img src="images/icon-hamburger.svg" alt="openmenu"></button>
+		
+		<nav class="navDesk">
 			<a>How we work</a>
 			<a>Blog</a>
 			<a>Account</a>
 			<button>View plans</button>
+		</nav>
+		
+		<nav id="navMob">
+			<div class="mbs1">
+				<img src="images/logo.svg" class="mlogo" alt="logo">
+				<button class="mobbtnop" onclick="openNavMenu()"><img src="images/icon-close.svg" alt="closemenu"></button>
+			</div>
+			<div class="mbs2">
+				<a>How we work</a>
+				<a>Blog</a>
+				<a>Account</a>
+				<button>View plans</button>
+			</div>
 		</nav>
 	</header>
 	<main>
@@ -71,31 +87,44 @@
 		</section>
 	</main>
 	<footer>
-	  Our company
+		<section class="fs1">
+			<img src="images/logo.svg" alt="logo">
+			<div>
+				<img src="images/icon-facebook.svg" alt="icon">
+				<img src="images/icon-twitter.svg" alt="icon">
+				<img src="images/icon-pinterest.svg" alt="icon">
+				<img src="images/icon-instagram.svg" alt="icon">
+			</div>
+		</section>
+		<section>
+			<ul><h4>Our company</h4>
 
-	  How we work
-	  Why Insure?
-	  View plans
-	  Reviews
+				<li>How we work</li>
+				<li>Why Insure?</li>
+				<li>View plans</li>
+				<li>Reviews</li>
+			</ul>
+			<ul><h4>Help me</h4>
 
-	  Help me
+				<li>FAQ</li>
+				<li>Terms of use</li>
+				<li>Privacy policy</li>
+				<li>Cookies</li>
+			</ul>
+			<ul><h4>Contact</h4>
 
-	  FAQ
-	  Terms of use
-	  Privacy policy
-	  Cookies
+				<li>Sales</li>
+				<li>Support</li>
+				<li>Live chat</li>
+			</ul>
+			<ul><h4>Others</h4>
 
-	  Contact
-
-	  Sales
-	  Support
-	  Live chat
-
-	  Others
-
-	  Careers
-	  Press
-	  Licenses
+				<li>Careers</li>
+				<li>Press</li>
+				<li>Licenses</li>
+			</ul>
+		</section>
 	</footer>
+	<script src="script.js"></script>
 </body>
 </html>
