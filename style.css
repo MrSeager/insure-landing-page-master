@@ -316,7 +316,7 @@ footer section{
 	padding-bottom: 3%;
 }
 
-footer section div{
+.links{
 	width: 12%;
 	display: flex;
 	flex-direction: row;
@@ -324,16 +324,21 @@ footer section div{
 	align-items: center;
 }
 
-footer section div img:hover{
+.links img:hover{
 	filter: brightness(0) saturate(100%);
 	cursor: pointer;
 }
 
-footer h4{
+
+footer h3{
 	text-transform: uppercase;
 	color: grey;
 	letter-spacing: 2px;
 	font-weight: bold;
+}
+
+footer ul{
+	padding: 0;
 }
 
 footer li{
@@ -476,7 +481,7 @@ footer li:hover{
 		margin: 15% 0 10% 0;
 	}
 	
-	footer section div{
+	.links{
 		width: 40%;
 		margin-top: 15%;
 		margin-bottom: 15%;
